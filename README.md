@@ -2,9 +2,9 @@
 
 ## How do I install these formulae?
 
-`brew install exodusmovement/alt/<formula>`
+`brew install ExodusMovement/alt/<formula>`
 
-Or `brew tap exodusmovement/alt` and then `brew install <formula>`.
+Or `brew tap ExodusMovement/alt` and then `brew install <formula>`.
 
 ## Documentation
 
