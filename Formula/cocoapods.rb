@@ -10,7 +10,6 @@ class Cocoapods < Formula
   depends_on "ruby"
   uses_from_macos "libffi", since: :catalina
 
-
   # Fix compatibility with Ruby 3.2, remove in next release
   patch do
     url "https://github.com/CocoaPods/CocoaPods/commit/2af8ba7e3477296d975243eeb1c12f379ab556a1.patch?full_index=1"
