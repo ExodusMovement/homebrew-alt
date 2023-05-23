@@ -1,18 +1,15 @@
 class Cocoapods < Formula
   desc "Dependency manager for Cocoa projects"
   homepage "https://cocoapods.org/"
-  url "https://github.com/CocoaPods/CocoaPods/archive/1.11.3.tar.gz"
-  sha256 "91d31754611520529b101ee57a059c5caadcd7ddb3c5b3b1065edc0ef5c43372"
+  url "https://github.com/CocoaPods/CocoaPods/archive/1.12.1.tar.gz"
+  sha256 "da018fc61694753ecb7ac33b21215fd6fb2ba660bd7d6c56245891de1a5f061c"
   license "MIT"
-  revision 1
+  revision 2
 
   depends_on "pkg-config" => :build
+  depends_on "ruby"
   uses_from_macos "libffi", since: :catalina
-  uses_from_macos "ruby", since: :catalina
 
-  on_arm do
-    depends_on "ruby"
-  end
 
   # Fix compatibility with Ruby 3.2, remove in next release
   patch do
